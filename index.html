@@ -203,9 +203,7 @@
                 
                 // Generate scientific-sounding analysis
                 const analyses = [
-                    `This was a prank ${userData.yourName}, there is no website which can send followers for free`,
-                    `Our phoneme analysis reveals a ${userData.percent}% match in vocal attraction markers.`,
-                    `Quantum entanglement probability scores in the top ${100-userData.percent}% of tested pairs.`
+                    `This was a prank ${userData.yourName}, there is no website which can send followers for free`
                 ];
                 document.getElementById('analysisText').innerHTML += 
                     `<p><strong>Analysis:</strong> ${analyses[Math.floor(Math.random() * analyses.length)]}</p>`;
