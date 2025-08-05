@@ -132,7 +132,7 @@
     </div>
 
     <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
     
     <script>
@@ -199,15 +199,16 @@
             
             // Show result after delay
             setTimeout(() => {
-                document.getElementById('compatibility').textContent = `${userData.percent}`;
+                document.getElementById('compatibility').textContent = `${userData.percent}%`;
                 
                 // Generate scientific-sounding analysis
                 const analyses = [
-                    `We have sent your account ${userData.yourName} ${userData.percent} followers`,
-                    `you will recieve within 24 hours`
+                    `The harmonic resonance between ${userData.yourName} and ${userData.crushName} shows exceptional compatibility.`,
+                    `Our phoneme analysis reveals a ${userData.percent}% match in vocal attraction markers.`,
+                    `Quantum entanglement probability scores in the top ${100-userData.percent}% of tested pairs.`
                 ];
                 document.getElementById('analysisText').innerHTML += 
-                    `<p><strong>Followers:</strong> ${analyses[Math.floor(Math.random() * analyses.length)]}</p>`;
+                    `<p><strong>Analysis:</strong> ${analyses[Math.floor(Math.random() * analyses.length)]}</p>`;
                 
                 // Show result and share button
                 document.getElementById('result').style.display = 'block';
@@ -237,7 +238,7 @@
         });
 // Share function
 function share(platform) {
-  const resultText = `${userData.percent} Followers Won;
+  const resultText = `${userData.percent}% Love Compatibility! ❤️`;
   const shareUrl = window.location.href; // Gets current page URL
 
   switch(platform) {
